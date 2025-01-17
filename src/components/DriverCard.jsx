@@ -26,7 +26,7 @@ export default function DriverCard({ driver, daysOfWeek }) {
       </div>
       <div className="driver-info">
         <p className="driver-duration">
-          <span className="info-label">Total Activity Duration:</span>
+          <span className="info-label">Activity Duration:</span>
           <br />
           {calculateDuration(driver.traces)}
         </p>

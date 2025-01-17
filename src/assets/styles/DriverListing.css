@@ -26,7 +26,6 @@
 .week-grid {
   display: flex;
   gap: 8px;
-  margin-top: 10px;
 }
 
 .day-box {
@@ -44,7 +43,6 @@
 }
 
 .driver-info {
-  margin-bottom: 1rem;
 }
 
 .info-label {
