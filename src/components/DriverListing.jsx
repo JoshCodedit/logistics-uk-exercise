@@ -1,23 +1,15 @@
-import calculateDuration from "../utils/durationCalculator";
+import DriverCard from "./DriverCard";
 import drivers from "../utils/data/drivers.json";
 import "../assets/styles/DriverListing.css";
 
 export default function DriverListing() {
+  const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
   return (
-    <div>
-      <div className="driver-listings-container">
-        {drivers.data.map((driver) => (
-          <div className="driver-listing">
-            <p className="driver-name">
-              {driver.forename} {driver.surname}
-            </p>
-            <p className="driver-vehicle">{driver.vehicleRegistration}</p>
-            <p className="driver-duration">
-              {calculateDuration(driver.traces)}
-            </p>
-          </div>
-        ))}
-      </div>
+    <div className="driver-listings-container">
+      {drivers.data.map((driver) => (
+        <DriverCard key={driver.id} driver={driver} daysOfWeek={daysOfWeek} />
+      ))}
     </div>
   );
 }
