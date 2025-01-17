@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidemenu maincontent";
+  grid-template-columns: auto 1fr;
+  margin: 0px 150px;
 }
 
 .App-logo {

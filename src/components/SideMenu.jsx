@@ -5,9 +5,9 @@ export default function SideMenu() {
   return (
     <nav className="side-menu">
       <ul>
-        {menuData.data.map((item, index) => (
+        {menuData.data.map((menuItem, index) => (
           <li key={index}>
-            <a href={item.url}>{item.title}</a>
+            <a href={menuItem.url}>{menuItem.title}</a>
           </li>
         ))}
       </ul>
