@@ -1,4 +1,5 @@
 .side-menu {
+  grid-area: sidemenu;
   width: 200px;
   min-height: calc(50vh);
   font-weight: bold;

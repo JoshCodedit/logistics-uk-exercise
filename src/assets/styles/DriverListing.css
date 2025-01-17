@@ -1,0 +1,24 @@
+.driver-listings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.driver-listing {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.driver-name,
+.driver-vehicle,
+.driver-duration {
+  margin: 0;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  min-width: 150px;
+}

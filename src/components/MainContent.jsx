@@ -1,4 +1,5 @@
 import DriverListing from "./DriverListing";
+import "../assets/styles/MainContent.css";
 
 export default function MainContent() {
   return (
